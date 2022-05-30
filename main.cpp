@@ -55,8 +55,5 @@ int main() {
 	std::cout << " splice ls4,ls7  " << ls4 << std::endl;
 	ls4.splice(ls4.begin(), ls2.begin(), ls2.end());
 	std::cout << " splice ls4,ls2  " << ls4 << std::endl;
-	/*std::list<int> lst{1,2,6,9};
-	std::list<int> lst2{ 5,7,8};
-	lst.splice(++lst.begin(),lst2,lst2.begin(),lst2.end());
-	std::copy ( lst.begin(), lst.end(), std::ostream_iterator<int>(std::cout, " "));*/
+	std::copy ( ls4.rbegin(), ls4.rend(), std::ostream_iterator<int>(std::cout, " "));
 }

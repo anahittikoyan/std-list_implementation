@@ -148,7 +148,7 @@ namespace nstd {
 		public:
 			Node* it{};
 		};
-		class const_reverse_iterator :public std::iterator<std::bidirectional_iterator_tag<T>, const T> {
+		class const_reverse_iterator :public std::iterator<std::bidirectional_iterator_tag, const T> {
 		public:
 			const_reverse_iterator() {}
 			const_reverse_iterator(const const_reverse_iterator& o) :it{ o.it } {}

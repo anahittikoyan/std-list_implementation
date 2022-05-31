@@ -3,7 +3,6 @@
 
 #include<iostream>
 #include <iterator>
-#include<type_traits>
 
 namespace nstd {
 	template<typename T, typename Allocator = std::allocator<T>>
